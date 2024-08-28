@@ -3,7 +3,12 @@
 import React, { useState } from 'react'
 import styles from './service.module.css'
 import Image from 'next/image';
-import headerBG from '/public/images/headerBg.webp'
+import dog1 from '/public/images/services/dog1.webp'
+import dog2 from '/public/images/services/dog2.webp'
+import dog3 from '/public/images/services/dog3.webp'
+import dog4 from '/public/images/services/dog4.webp'
+import docSrvc from '/public/images/services/srvc_doctor.webp'
+
 
 
 function ServicesComponent() {
@@ -31,7 +36,7 @@ function ServicesComponent() {
         <a href="http://" className={`relative`}>
           <div className="relative w-[90vw] h-[200px] tabletM:w-[350px] tabletM:h-[350px] overflow-hidden rounded-lg"> {/* Set the desired dimensions */}
             <Image
-              src={headerBG}
+              src={dog1}
               alt="Description of the image"
               layout="fill"   
               objectFit="cover" 
@@ -47,7 +52,7 @@ function ServicesComponent() {
         <a href="http://" className={`relative`}>
           <div className="relative w-[90vw] h-[200px] tabletM:w-[350px] tabletM:h-[350px] overflow-hidden rounded-lg"> {/* Set the desired dimensions */}
             <Image
-              src={headerBG}
+              src={dog2}
               alt="Description of the image"
               layout="fill"   
               objectFit="cover" 
@@ -63,7 +68,7 @@ function ServicesComponent() {
         <a href="http://" className={`relative`}>
           <div className="relative w-[90vw] h-[200px] tabletM:w-[350px] tabletM:h-[350px] overflow-hidden rounded-lg"> {/* Set the desired dimensions */}
             <Image
-              src={headerBG}
+              src={dog3}
               alt="Description of the image"
               layout="fill"   
               objectFit="cover" 
@@ -79,7 +84,7 @@ function ServicesComponent() {
         <a href="http://" className={`relative`}>
           <div className="relative w-[90vw] h-[200px] tabletM:w-[350px] tabletM:h-[350px] overflow-hidden rounded-lg"> {/* Set the desired dimensions */}
             <Image
-              src={headerBG}
+              src={dog4}
               alt="Description of the image"
               layout="fill"   
               objectFit="cover" 
@@ -98,7 +103,7 @@ function ServicesComponent() {
         <div className={`flex flex-col w-[100%] gap-4 justify-center nav1:flex-row nav1:px-5 desktopWide:w-[80%] laptop:mx-auto`}>
           <div className="relative mx-auto w-[80vw] h-[300px] cpLg:h-[400px] nav1:w-[500px] nav1:h-[500px] desktopWide:mx-0">
             <Image
-              src={headerBG}
+              src={docSrvc}
               alt="Description of the image"
               layout="fill"  
               objectFit="cover"
