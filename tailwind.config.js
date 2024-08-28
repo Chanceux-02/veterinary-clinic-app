@@ -13,6 +13,25 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    screens: {
+      'cpLg': '500px',
+
+      'tablet': '640px',
+      // => @media (min-width: 640px) { ... }
+      'tabletM': '768px',
+
+      'nav1': '977px',
+      'nav2': '1490px',
+      // =>custom for nav bar
+
+      'laptop': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'desktop': '1280px',
+      // => @media (min-width: 1280px) { ... }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 };
