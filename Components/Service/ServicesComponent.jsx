@@ -38,7 +38,7 @@ function ServicesComponent() {
             <Image
               src={dog1}
               alt="Description of the image"
-              layout="fill"   
+              fill   
               objectFit="cover" 
               className={`rounded-lg transform transition duration-300 ease-in-out ${isHovered1 ? ' scale-110' : ''} `}
             />
