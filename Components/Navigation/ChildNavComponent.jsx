@@ -1,6 +1,9 @@
 import React from 'react'
 import Link from 'next/link';
 import styles from './childNav.module.css'
+import logo from '../../public/Images/services/logo.jpg'
+import Image from 'next/image'
+
 
 function ChildNavComponent({ scroll }) {
     return (
@@ -36,9 +39,15 @@ function ChildNavComponent({ scroll }) {
             </div>
 
 
-            <div className={`${styles.nav} justify-center mx-auto px-20 py-12 bg-blue-950 text-white transition-width duration-1000 ease-in-out hidden nav1:flex rounded-none mt-0 ${scroll ? 'fixed left-0 right-0 top-0 w-full rounded-none' : 'nav2:w-[70%] nav2:mt-10 nav2:rounded-lg'} `}>
+            <div className={`${styles.nav} items-center justify-center mx-auto px-20 py-5 bg-blue-950 text-white transition-width duration-1000 ease-in-out hidden nav1:flex rounded-none mt-0 ${scroll ? 'fixed left-0 right-0 top-0 w-full rounded-none' : 'nav2:w-[70%] nav2:mt-10 nav2:rounded-lg'} `}>
                 <section>
-                    <h1>Logo</h1>
+                    <Image
+                        src={logo}
+                        alt=""
+                        responsive
+                        objectFit="cover"
+                        className={`w-[40%] h-auto rounded-tl-lg`}
+                    />
                 </section>
                 <section className={'flex w-[80%] justify-center mx-auto px-5 font-bold'}>
                     <div className="dropdown dropdown-hover mx-5">
@@ -73,7 +82,7 @@ function ChildNavComponent({ scroll }) {
                         </ul>
                     </div>
                 </section>
-                <section>
+                <section className={`min-w-[150px]`}>
                     <h5 className={scroll ? "hidden" : "block"}>&#128222; 800-462-8749</h5>
                     <Link href="#" className={`btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-white h-auto text-black border-none font-semibold hover:text-white p-3 ${scroll ? "block" : "hidden"} `}>BOOK AN APPOINTMENT</Link>
                 </section>

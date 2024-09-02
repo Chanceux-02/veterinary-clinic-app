@@ -1,4 +1,5 @@
 import Contact from "@/Components/Contact/ClientContact";
+import FooterComponent from "@/Components/Footer/FooterComponent";
 import HeaderComponent from "@/Components/Header/HeaderComponent";
 import NavigationComponent from "@/Components/Navigation/ClientNavComponent";
 import ServicesComponent from "@/Components/Service/ServicesComponent";
@@ -15,6 +16,7 @@ export default function Home() {
       <HeaderComponent />
       <ServicesComponent />
       <Contact />
+      <FooterComponent />
     </>
   );
 }

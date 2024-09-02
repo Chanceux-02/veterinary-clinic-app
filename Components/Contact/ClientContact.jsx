@@ -34,7 +34,7 @@ export default function ClientContact() {
 
                     <div className={` w-[80%] mx-auto mt-[5%] flex flex-wrap justify-center gap-10 max-w-[1500px]`}>
 
-                        <di className={`bg-[#172242CC] w-[600px] h-[300px] rounded-lg p-7 flex flex-col justify-around text-white hover:bg-[#172242f5]`}>
+                        <di className={`bg-[#172242CC] w-[600px] h-[300px] laptop-and-desktop:w-[400px] laptop-and-desktop:h-[200px] rounded-lg p-7 flex flex-col justify-around text-white hover:bg-[#172242f5]`}>
                             <Image
                                 src={icon1}
                                 alt=""
@@ -46,7 +46,7 @@ export default function ClientContact() {
                             <p className={`text-sm break-words`}>Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
                             <Link href='#' className={`text-2xl`}>CONNECT WITH US</Link>
                         </di>
-                        <di className={`bg-[#172242CC] w-[600px] h-[300px] rounded-lg p-7 flex flex-col justify-around text-white hover:bg-[#172242f5]`}>
+                        <di className={`bg-[#172242CC] w-[600px] h-[300px] laptop-and-desktop:w-[400px] laptop-and-desktop:h-[200px] rounded-lg p-7 flex flex-col justify-around text-white hover:bg-[#172242f5]`}>
                             <Image
                                 src={icon1}
                                 alt=""
@@ -58,7 +58,7 @@ export default function ClientContact() {
                             <p className={`text-sm break-words`}>Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
                             <Link href='#' className={`text-2xl`}>VIEW FORMS</Link>
                         </di>
-                        <di className={`bg-[#172242CC] w-[600px] h-[300px] rounded-lg p-7 flex flex-col justify-around text-white hover:bg-[#172242f5]`}>
+                        <di className={`bg-[#172242CC] w-[600px] h-[300px] laptop-and-desktop:w-[400px] laptop-and-desktop:h-[200px] rounded-lg p-7 flex flex-col justify-around text-white hover:bg-[#172242f5]`}>
                             <Image
                                 src={icon1}
                                 alt=""
@@ -70,7 +70,7 @@ export default function ClientContact() {
                             <p className={`text-sm break-words`}>Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
                             <Link href='#' className={`text-2xl`}>SCHEDULE NOW</Link>
                         </di>
-                        <di className={`bg-[#172242CC] w-[600px] h-[300px] rounded-lg p-7 flex flex-col justify-around text-white hover:bg-[#172242f5]`}>
+                        <di className={`bg-[#172242CC] w-[600px] h-[300px] laptop-and-desktop:w-[400px] laptop-and-desktop:h-[200px] rounded-lg p-7 flex flex-col justify-around text-white hover:bg-[#172242f5]`}>
                             <Image
                                 src={icon1}
                                 alt=""
@@ -86,10 +86,10 @@ export default function ClientContact() {
                     </div>
 
                     <div className={`appointmentForm pt-5 mt-12`}>
-                        <h1 className={`text-6xl text-white font-extrabold text-center mb-12`} >Appointment Request</h1>
-                        <form className={`mx-auto w-[50%] max-w-[1500px]`}>
-                            <div className={`flex gap-5 justify-center w-full `}>
-                                <div className={`flex flex-col gap-5 w-[50%]`}>
+                        <h1 className={` text-4xl cpLg:text-6xl text-white font-extrabold text-center mb-12`} >Appointment Request</h1>
+                        <form className={`mx-auto w-[90%] tablet:w-[50%] max-w-[1500px]`}>
+                            <div className={`flex gap-5 justify-center w-full flex-col tabletM:flex-row`}>
+                                <div className={`flex flex-col gap-5 w-full tabletM:w-[50%]`}>
 
                                     <input type="text" name="name" placeholder="Enter You Name" className="input input-bordered input-info w-full" />
                                     <input type="email" name="email" placeholder="Enter Your Email" className="input input-bordered input-info w-full" />
@@ -97,12 +97,12 @@ export default function ClientContact() {
                                     <input type="text" name="date" placeholder="Select Data" className="input input-bordered input-info w-full" />
                                     <input type="text" name="time" placeholder="Select Time" className="input input-bordered input-info w-full" />
                                 </div>
-                                <div className={`w-[50%]`}>
-                                    <textarea name="" id="" placeholder="Some message" className="textarea textarea-info h-full w-full"></textarea>
+                                <div className={`w-full tabletM:w-[50%]`}>
+                                    <textarea name="" id="" placeholder="Some message" className="textarea textarea-info h-full w-full min-h-[200px] "></textarea>
                                 </div>
                             </div>
                             <div className={`flex justify-center mt-12`}>
-                                <button type="submit" className="btn btn-wide mx-auto btn-outline btn-primary mt-5">Submit</button>
+                                <button type="submit" className="btn btn-wide mx-auto bg-white text-black mt-5">Submit</button>
                             </div>
                         </form>
                     </div>
